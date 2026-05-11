@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Bloom Pregnancy Tracker</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+    header { margin-bottom: 40px; }
+    header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; }
+    header p { color: #666; margin-top: 6px; font-size: 15px; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 10px; color: #1a1a1a; }
+    p { font-size: 15px; color: #444; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 15px; color: #444; margin-bottom: 6px; }
+    a { color: #5c7a5c; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-size: 13px; color: #999; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p>Bloom Pregnancy Tracker &nbsp;·&nbsp; Last updated: May 11, 2026</p>
+    </header>
+
+    <p>Bloom is a personal pregnancy companion. Your health data is sensitive, and we treat it that way. This policy explains exactly what we collect, where it lives, and how it is used.</p>
+
+    <h2>1. Data We Collect</h2>
+    <p>Bloom collects only what you explicitly enter:</p>
+    <ul>
+      <li>Pregnancy information (due date, week, notes)</li>
+      <li>Daily logs (mood, symptoms, sleep, water, notes)</li>
+      <li>Kick counts and contraction timer sessions</li>
+      <li>Appointments, weight entries, hospital bag items</li>
+      <li>Baby names, belly photos, and letters to baby (Premium)</li>
+    </ul>
+    <p>We do not collect device identifiers, location, contacts, microphone, or camera data beyond photos you explicitly choose to add.</p>
+
+    <h2>2. Where Your Data Lives</h2>
+    <p><strong>On your device.</strong> All data is stored locally using Apple's SwiftData framework. Belly photos and letters to baby are stored entirely on-device and are never transmitted to any server.</p>
+    <p><strong>Optional cloud sync.</strong> If you create a Bloom account (email + password), your pregnancy and log data is synced to our Supabase backend so you can restore data on a new device. This sync is optional — the app works fully offline without an account.</p>
+    <p>Cloud data is stored in a Supabase database secured by Row-Level Security (RLS). Only your own account can read or write your records.</p>
+
+    <h2>3. Authentication</h2>
+    <p>If you sign in, we store your session token in Apple Keychain — never in UserDefaults or plain storage. We use Supabase Auth (email + bcrypt password hashing). We do not support social login.</p>
+
+    <h2>4. What We Never Do</h2>
+    <ul>
+      <li>We do not sell your data to any third party.</li>
+      <li>We do not share your data with advertisers.</li>
+      <li>We do not use your data to train AI models.</li>
+      <li>We do not display behavioral advertising.</li>
+      <li>We do not track you across other apps or websites.</li>
+    </ul>
+
+    <h2>5. In-App Purchases</h2>
+    <p>Bloom offers a one-time Lifetime purchase and a monthly/annual subscription via Apple's StoreKit 2. All payment processing is handled entirely by Apple. We never see your credit card or payment details. Apple's privacy policy governs payment data.</p>
+
+    <h2>6. Analytics</h2>
+    <p>Bloom does not embed any third-party analytics SDK (no Firebase, no Mixpanel, no Amplitude). We rely solely on Apple App Store Connect analytics for aggregate, anonymized install and usage metrics.</p>
+
+    <h2>7. Notifications</h2>
+    <p>If you grant notification permission, Bloom sends local push notifications (weekly pregnancy updates, appointment reminders). These are generated on-device. No notification content is transmitted to any server. You can disable notifications at any time in iOS Settings.</p>
+
+    <h2>8. Children</h2>
+    <p>Bloom is rated 4+ and designed for adults who are pregnant or supporting a pregnancy. We do not knowingly collect data from children under 13.</p>
+
+    <h2>9. Data Deletion</h2>
+    <p>You can delete all your data at any time from Bloom's Settings screen using "Reset All Data." This permanently removes all local SwiftData records. If you have a cloud account, you can additionally delete your account from Settings, which removes all server-side records within 30 days.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>If we make material changes to this policy, we will update the "Last updated" date above and post the new version at this URL. Continued use of the app after changes constitutes acceptance.</p>
+
+    <h2>11. Contact</h2>
+    <p>Questions about this policy? Email us at <a href="mailto:support@bloompregnancyapp.com">support@bloompregnancyapp.com</a>.</p>
+
+    <footer>
+      <p>&copy; 2026 Bloom Pregnancy Tracker. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
